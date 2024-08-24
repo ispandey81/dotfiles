@@ -30,6 +30,8 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
+(require 'use-package) ;mandatory even though use-package is built in something to do with lazy loading i think
+
 (setq use-package-always-ensure t)
 
 (use-package doom-modeline
